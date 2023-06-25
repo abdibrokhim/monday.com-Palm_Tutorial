@@ -23,3 +23,7 @@ async def read_root():
 def get_response(prompt: str, file_name: str):
     return palm.get_response(prompt, file_name)
 
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
