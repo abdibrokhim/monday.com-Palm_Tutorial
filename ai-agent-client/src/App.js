@@ -137,7 +137,7 @@ function App() {
 
   const handleButtonClick = () => {
   
-    fetch("http://localhost:8000/get_response", {
+    fetch("http://0.0.0.0:8000/get_response", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
